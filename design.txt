@@ -1,0 +1,23 @@
+Neil Israni
+This mastermind game uses Turtle to first draw out the grids, pointers,
+color selectors, leaderboard, and buttons for checking color selection,
+erasing color selections (cross) and exiting game. The player must
+guess a sequence of 4 colors set up at the start of each round. Despite
+the game running the functions in the Initializer class multiple times it 
+keeps track of the current row and selection through global lists that are 
+appended and popped from according to their usage. A complete selection
+(4 color clicks and a click on the check) is passed as a list to a scorer, which
+Then passes a score to the pointers for display and to the leaderboard.
+Button clicks are registered in largely two sections: selections and buttons, that drive the 
+game accordingly. The game outputs a leaderboard txt file (to keep 
+continuity across runs of the program) and an error logging file.
+
+Some things to note while playing it that a complete selection of 4 colors 
+must be made before using the erasing cross button. Also, colors should 
+be chosen slowly (wait the one second for them to appear before picking
+the next) or else it will overload the game. Also, the exit function can 
+only be accessed if the game is started (that is, it has received at least
+one color selection). The game is also sensitive to clicks outside the buttons
+and selectors; clicks outside these zones will make the gaming experience 
+less smooth.
+ 
